@@ -1,0 +1,89 @@
+/* style.css */
+
+/* Background and Font Styles */
+body {
+    background-color: #f0f4f8; /* Ultra-light background color */
+    font-family: 'Arial', sans-serif; /* Font for the app */
+}
+
+/* Button Styles */
+button {
+    margin: 5px; /* Spacing between buttons */
+    padding: 10px 20px; /* Button padding */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #e7f3fe; /* Light blue background for buttons */
+    color: #007bff; /* Bootstrap primary color for text */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+    font-weight: 600; /* Slightly bolder text */
+}
+
+/* Button Hover Effect */
+button:hover {
+    background-color: #d1e7fd; /* Slightly darker blue on hover */
+    color: #0056b3; /* Darker text color on hover */
+}
+
+/* Focus State for Buttons */
+button:focus {
+    outline: none; /* Remove outline on focus */
+}
+
+/* Card Title Styles */
+h5.card-title {
+    font-weight: bold;
+    color: #333; /* Darker color for card titles */
+}
+
+/* Container for the Card List */
+.card-container {
+    display: flex; /* Use flexbox */
+    flex-wrap: wrap; /* Allow wrapping of cards */
+    justify-content: center; /* Center the cards */
+    margin: 20px; /* Margin around the container */
+}
+
+/* Card Styles */
+.card {
+    margin: 10px; /* Margin around each card */
+    border: none; /* Remove border */
+    border-radius: 10px; /* Rounded corners */
+    transition: transform 0.2s; /* Animation for hover effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    width: 18rem; /* Set fixed width for cards */
+    background-color: #ffffff; /* White background for the card */
+}
+
+/* Hover Effect on Cards */
+.card:hover {
+    transform: scale(1.05); /* Slightly enlarge the card on hover */
+}
+
+/* Image Styles */
+.card-img-top {
+    width: 100%; /* Ensure the image takes the full width of the card */
+    height: 200px; /* Set a fixed height for all images */
+    object-fit: cover; /* Maintain aspect ratio and cover the area */
+    border-top-left-radius: 10px; /* Round the top corners of the image */
+    border-top-right-radius: 10px; /* Round the top corners of the image */
+}
+
+/* Card Body Styles */
+.card-body {
+    padding: 15px; /* Padding inside the card body */
+    text-align: center; /* Center the text */
+}
+
+/* Additional Text Styles for Cards */
+.card-text {
+    color: #555; /* Darker color for price text */
+    font-size: 0.9rem; /* Slightly smaller font for prices */
+}
+
+/* Adding Responsive Styles */
+@media (max-width: 768px) {
+    .card {
+        width: 90%; /* Adjust card width on smaller screens */
+    }
+}
